@@ -7,17 +7,18 @@ let average = 0
 
 while (number = prompt('Imput number:')){
 
+    let num = parseInt(number)
     i++
 
-    if (number > maxNumber){
+    if (num > maxNumber){
         maxNumber = number
     }
 
-    if (number < minNumber){
+    if (num < minNumber){
         minNumber = number
     }
 
-    sum += number
+    sum = sum +  num
 
     average = sum/i
 }
