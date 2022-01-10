@@ -24,17 +24,3 @@ while (number = prompt('Imput number:')){
 }
 
 alert(`Max value:  ${maxNumber} Min value: ${minNumber} Sum: ${sum} Average: ${average}`)
-
-
-
-
-
-// do 
-// {
-//     number = prompt('Imput number:')
-  
-//     if (number > maxNumber){
-//         maxNumber = number
-//     }
-
-// }while (number !== null)
