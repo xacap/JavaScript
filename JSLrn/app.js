@@ -5,19 +5,20 @@ let sum = 0
 let i = 0
 let average = 0 
 
-while (number = parseInt(prompt('Imput number:'))){
+while (number = prompt('Imput number:')){
     
+    let num = parseInt(number)
     i++
 
-    if (number > maxNumber){
-        maxNumber = number
+    if (num > maxNumber){
+        maxNumber = num
     }
 
-    if (number < minNumber){
-        minNumber = number
+    if (num < minNumber){
+        minNumber = num
     }
 
-    sum = sum + number
+    sum = sum + num
 
     average = sum/i
 }
