@@ -1,26 +1,28 @@
-let number
-let maxNumber = Number.MIN_SAFE_INTEGER
-let minNumber = Number.MAX_SAFE_INTEGER
-let sum = 0
-let i = 0
-let average = 0 
 
-while (number = prompt('Imput number:')){
-    
-    let num = parseInt(number)
-    i++
+let array = []
 
-    if (num > maxNumber){
-        maxNumber = num
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+  }
+
+for (let i = 0; i < 5; i++){
+    array[i] = []
+    for (let j = 0; j < 5; j++){
+        array[i][j] = getRandomArbitrary(-100, 100)
     }
-
-    if (num < minNumber){
-        minNumber = num
-    }
-
-    sum = sum + num
-
-    average = sum/i
 }
 
-alert(`Max value:  ${maxNumber} Min value: ${minNumber} Sum: ${sum} Average: ${average}`)
+console.log(array)
+
+for (let i = 0; i < 5; i++){
+    for (let j = 0; j < 5; j++, i++){
+        if(array[i][j] < 0){
+            array[i][j] = 0
+        }
+        else{
+            array[i][j] = 1
+        }
+    }
+}
+
+console.log(array)
